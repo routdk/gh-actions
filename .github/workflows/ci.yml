@@ -1,0 +1,12 @@
+name: ci
+on: push
+
+jobs:
+  job1:
+    name: Second Job
+    runs-on : [ubuntu-latest]
+    steps:
+      - name: Step1
+        uses: actions/checkout@v2
+      - name: Step2
+        runs : echo "Hello World"
